@@ -1,40 +1,40 @@
 # README: MOO-based PAT Framework for Protein Refolding
 
-This repository contains the implementation of a process analytical technology (PAT) framework for real-time monitoring and autonomous control of protein refolding[cite: 19]. The system integrates a 1D-CNN-powered Fourier transform infrared (FTIR) soft sensor with a multi-objective optimization (MOO) scheme utilizing NSGA-II[cite: 20, 21].
+This repository contains the implementation of a process analytical technology (PAT) framework for real-time monitoring and autonomous control of protein refolding[cite: 19]. The system integrates a 1D-CNN-powered Fourier transform infrared (FTIR) soft sensor with a multi-objective optimization (MOO) scheme utilizing NSGA-II.
 
 ---
 
 ## Project Overview
 
-Protein refolding is typically a lengthy and inefficient bottleneck in bioprocessing[cite: 18]. This project proposes a real-time monitoring and control scheme to identify parameter deviations and autonomously adjust process settings, ensuring final yields remain within target limits[cite: 19, 23].
+Protein refolding is typically a lengthy and inefficient bottleneck in bioprocessing. This project proposes a real-time monitoring and control scheme to identify parameter deviations and autonomously adjust process settings, ensuring final yields remain within target limits.
 
 ### Key Components
-* **Soft Sensor:** A 1D-CNN model coupled with FTIR spectroscopy that tracks refolding dynamics with an average prediction error of ~5%[cite: 284, 1027].
-* **Real-time Monitoring:** Continuous acquisition of Critical Process Parameters (CPPs) including pH, temperature, and Oxidation-Reduction Potential (ORP)[cite: 391, 526].
-* **Autonomous Control (Scheme B):** An ensemble-coupled NSGA-II optimizer that provides real-time adjustments by identifying optimal conditions on the Pareto front[cite: 509, 1020].
-* **Fault Diagnosis:** Demonstrated capability to identify non-viable "failure batches" (e.g., yield dropping to 10%) for early process termination[cite: 1028, 1029].
+* **Soft Sensor:** A 1D-CNN model coupled with FTIR spectroscopy that tracks refolding dynamics with an average prediction error of ~5%.
+* **Real-time Monitoring:** Continuous acquisition of Critical Process Parameters (CPPs) including pH, temperature, and Oxidation-Reduction Potential (ORP).
+* **Autonomous Control (Scheme B):** An ensemble-coupled NSGA-II optimizer that provides real-time adjustments by identifying optimal conditions on the Pareto front.
+* **Fault Diagnosis:** Demonstrated capability to identify non-viable "failure batches" (e.g., yield dropping to 10%) for early process termination.
 
 ---
 
 ## Technical Specifications
 
 ### Hardware Environment
-* **CPU:** Intel(R) Core™ i7-14700K (3.40 GHz) [cite: 141]
-* **RAM:** 64 GB [cite: 141]
-* **GPU:** NVIDIA T400 4 GB [cite: 141]
+* **CPU:** Intel(R) Core™ i7-14700K (3.40 GHz)
+* **RAM:** 64 GB
+* **GPU:** NVIDIA T400 4 GB
 
 ### 1D-CNN Architecture
-* **Preprocessing:** PCA denoising (11 components), Savitzky-Golay filtering, Gaussian smoothing, and SNV baseline correction[cite: 178, 202].
-* **Model Structure:** Four 1D-convolutional layers (32 filters, kernel sizes 8-16) followed by Batch Normalization, ReLU activation, and a 128-unit fully connected layer[cite: 248, 251, 261].
-* **Performance:** Average inference latency of 10-15 milliseconds[cite: 303].
+* **Preprocessing:** PCA denoising (11 components), Savitzky-Golay filtering, Gaussian smoothing, and SNV baseline correction.
+* **Model Structure:** Four 1D-convolutional layers (32 filters, kernel sizes 8-16) followed by Batch Normalization, ReLU activation, and a 128-unit fully connected layer.
+* **Performance:** Average inference latency of 10-15 milliseconds.
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-* **Python Version:** 3.9.7 [cite: 165]
-* **Primary Libraries:** NumPy, SciPy, scikit-learn, Keras, and TensorFlow [cite: 166]
+* **Python Version:** 3.9.7
+* **Primary Libraries:** NumPy, SciPy, scikit-learn, Keras, and TensorFlow
 
 ### Installation
 ```bash

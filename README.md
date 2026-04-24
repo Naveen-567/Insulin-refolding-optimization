@@ -1,6 +1,6 @@
 # MOO-based PAT Framework for Protein Refolding
 
-This repository contains the implementation of a process analytical technology (PAT) framework for real-time monitoring and autonomous control of protein refolding[cite: 19]. The system integrates a 1D-CNN-powered Fourier transform infrared (FTIR) soft sensor with a multi-objective optimization (MOO) scheme utilizing NSGA-II.
+This repository contains the implementation of a process analytical technology (PAT) framework for real-time monitoring and autonomous control of protein refolding. The system integrates a 1D-CNN-powered Fourier transform infrared (FTIR) soft sensor with a multi-objective optimization (MOO) scheme utilizing NSGA-II.
 
 ---
 
@@ -10,7 +10,7 @@ Protein refolding is typically a lengthy and inefficient bottleneck in bioproces
 
 ### Key Components
 * **Soft Sensor:** A 1D-CNN model coupled with FTIR spectroscopy that tracks refolding dynamics with an average prediction error of ~5%.
-* **Real-time Monitoring:** Continuous acquisition of Critical Process Parameters (CPPs) including pH, temperature, and Oxidation-Reduction Potential (ORP).
+* **Real-time Monitoring:** Continuous acquisition of Critical Process Parameters (CPPs), including pH, temperature, and Oxidation-Reduction Potential (ORP).
 * **Autonomous Control (Scheme B):** An ensemble-coupled NSGA-II optimizer that provides real-time adjustments by identifying optimal conditions on the Pareto front.
 * **Fault Diagnosis:** Demonstrated capability to identify non-viable "failure batches" (e.g., yield dropping to 10%) for early process termination.
 

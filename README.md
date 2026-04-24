@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # README: MOO-based PAT Framework for Protein Refolding
 
 This repository contains the implementation of a process analytical technology (PAT) framework for real-time monitoring and autonomous control of protein refolding[cite: 19]. The system integrates a 1D-CNN-powered Fourier transform infrared (FTIR) soft sensor with a multi-objective optimization (MOO) scheme utilizing NSGA-II[cite: 20, 21].
@@ -42,6 +41,7 @@ Protein refolding is typically a lengthy and inefficient bottleneck in bioproces
 git clone [https://github.com/Naveen-567/Insulin-refolding-optimization](https://github.com/Naveen-567/Insulin-refolding-optimization)
 cd Insulin-refolding-optimization
 pip install numpy scipy scikit-learn tensorflow keras pandas matplotlib
+```
 
 ### Usage
 Calibration: Train the 1D-CNN model using the 200 datasets and spectral data provided in 1D-CNN.xlsx.

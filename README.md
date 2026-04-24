@@ -1,4 +1,4 @@
-# README: MOO-based PAT Framework for Protein Refolding
+# MOO-based PAT Framework for Protein Refolding
 
 This repository contains the implementation of a process analytical technology (PAT) framework for real-time monitoring and autonomous control of protein refolding[cite: 19]. The system integrates a 1D-CNN-powered Fourier transform infrared (FTIR) soft sensor with a multi-objective optimization (MOO) scheme utilizing NSGA-II.
 
